@@ -1,0 +1,125 @@
+{
+    {
+        "window.zoomLevel": 1,
+    
+        "editor.fontFamily": "'Iosevka Term', monospace",
+        "editor.fontLigatures": true,
+        "editor.fontSize": 17,
+        "editor.lineNumbers": "relative",
+        "editor.overviewRulerBorder": false,
+        "editor.renderControlCharacters": true,
+        "editor.renderIndentGuides": false,
+        "editor.renderWhitespace": "boundary",
+        "editor.snippetSuggestions": "top",
+        "editor.tabSize": 2,
+    
+        "emmet.triggerExpansionOnTab": true,
+        "emmet.includeLanguages": {
+          "javascript": "javscriptreact"
+        },
+    
+        "eslint.autoFixOnSave": true,
+        "eslint.validate": [
+          {"language": "javascript", "autoFix": true },
+          {"language": "javascriptreact", "autoFix": true },
+          {"language": "typescript", "autoFix": true },
+          {"language": "typescriptreact", "autoFix": true }
+        ],
+    
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+    
+        "workbench.activityBar.visible": true,
+        "workbench.editor.showTabs": false,
+        "workbench.colorTheme": "One Dark Space Gray",
+        "workbench.startupEditor": "newUntitledFile",
+        "workbench.colorCustomizations": {
+          "activityBar.background": "#151515",
+          "editor.background": "#151515",
+          "editorGroup.border": "#00000000",
+          "editorCursor.foreground": "#555454",
+          "sideBar.background": "#151515",
+          "scrollbar.shadow": "#00000000",
+          "statusBar.background": "#934711",
+          "statusBar.noFolderBackground": "#934711",
+          "statusBar.debuggingBackground": "#934711"
+        },
+        "explorer.confirmDelete": false,
+        "explorer.confirmDragAndDrop": false,
+        "javascript.updateImportsOnFileMove.enabled": "never",
+        "workbench.statusBar.feedback.visible": false,
+        "vim.statusBarColorControl": true,
+        "liveServer.settings.showOnStatusbar": false,
+        "liveshare.showInStatusBar": "never",
+        "vim.statusBarColors.insert": "#3f4f5d",
+        "vim.statusBarColors.normal": "#333333",
+        "vim.statusBarColors.replace": "#1d1f21",
+        "vim.statusBarColors.visual": "#934711",
+        "vim.statusBarColors.visualblock": "#934711",
+        "vim.statusBarColors.visualline": "#934711",
+        "vim.leader": "<SPACE>",
+        "vim.normalModeKeyBindingsNonRecursive": [
+          {
+            "before": ["<leader>", "w"],
+            "commands": [
+              "workbench.action.files.save"
+            ]
+          },
+          {
+            "before": ["<leader>", "q"],
+            "commands": [":q!"]
+          },
+          {
+            "before": ["<leader>", "x"],
+            "commands": [":x"]
+          },
+          {
+            "before": ["<leader>", "t"],
+            "commands": [
+              "workbench.action.quickOpen"
+            ]
+          },
+          {
+            "before": ["<C-h>"],
+            "commands": [
+              "workbench.action.openNextRecentlyUsedEditorInGroup"
+            ]
+          },
+          {
+            "before": ["<leader>", "aj"],
+            "commands": [
+              "editor.action.marker.next"
+            ]
+          },
+          {
+            "before": ["<leader>", "ak"],
+            "commands": [
+              "editor.action.marker.previous"
+            ]
+          },
+          {
+            "before": ["<leader>", "ag"],
+            "commands": [
+              "editor.action.goToDefinition"
+            ]
+          },
+          {
+            "before": ["<C-w>", "s"],
+            "commands": [
+              "workbench.action.splitEditorDown"
+            ]
+          },
+          {
+            "before": ["<C-w>", "v"],
+            "commands": [
+              "workbench.action.splitEditorRight"
+            ]
+          },
+          {
+            "before": ["<C-w>", "q"],
+            "commands": [":q"]
+          }
+        ],
+      }
+    
+}
