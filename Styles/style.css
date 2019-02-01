@@ -1,44 +1,131 @@
 * {
+  /2 numbers is top and bottom.
+    3 numbers is top, both sides, and bottom:
+    4 numbers is all sides with various sizes/
+  border:solid 1px lightgrey;
+  margin: auto;
+  padding: 20px 20px 20px;
+  width: auto;
+}
+
+.container {
+  width: auto;
+}
+
+h1 {
+  background-color: blueviolet;
+  color: yellowgreen
+}
+
+h2 {
+  background-color: red;
+  color: green;
+}
+
+h3 {
+  background-color: purple;
+  color: gold;
+}
+
+h4 {
+  background-color: orange;
+  color: pink;
+}
+
+h5 {
+  background-color: green;
+  color: blue;
+}
+
+.lightgrey {
+  color:lightskyblue;
+}
+
+.bluelist {
+  color:darksalmon;
+  background-color:darkseagreen;
+}
+
+.picturesize {
+  widows: 100px;
+
+}
+
+.textposition {
+  text-align: center;
+}
+
+#content {
+  text-align: center;
+}
+
+.facepicsize {
+  width: 350px;
+  height: 350px;
+}
+* {
   /*2 numbers is top and bottom.
     3 numbers is top, both sides, and bottom:
     4 numbers is all sides with various sizes*/
   border:solid 1px lightgrey;
-  margin: 20px 20px;
+  margin: auto;
   padding: 20px 20px 20px;
+  width: auto;
 }
 
-    h1 {
+.container {
+  width: auto;
+}
 
-      background-color: aqua;
-      margin: center;
-      color: tomato;
-    }
+h1 {
+  background-color: blueviolet;
+  color: yellowgreen
+}
 
-    h2 {
-      border: 1px
-    }
-    h3 {
-      background-color: rebeccapurple;
-      color: seashell
-    }
+h2 {
+  background-color: red;
+  color: green;
+}
 
-          li {
-      background-color: antiquewhite;
-      color:rgb(192, 192, 209)
-    }
-    .container {
-      max-width: 960px;
-      min-width: 480px;
-      width:500px;
+h3 {
+  background-color: purple;
+  color: gold;
+}
 
-    }
-    .tomatify {
-      color:tomato;
-    }
-    .aquafy {
-      color: greenyellow;
-    }
-    ul {
-      background-color: blue;
-      color:cadetblue;
-    }
+h4 {
+  background-color: orange;
+  color: pink;
+}
+
+h5 {
+  background-color: green;
+  color: blue;
+}
+
+.lightgrey {
+  color:lightskyblue;
+}
+
+.bluelist {
+  color:darksalmon;
+  background-color:darkseagreen;
+}
+
+.picturesize {
+  widows: 100px;
+
+}
+
+
+.textposition {
+  text-align: center;
+}
+
+#content {
+  text-align: center;
+}
+
+.facepicsize {
+  width: 350px;
+  height: 350px;
+}
