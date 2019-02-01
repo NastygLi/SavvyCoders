@@ -30,5 +30,7 @@
       color:cadetblue;
     }
 * {
-  border: solid 1px color:red
+  border: solid 1px color:red;
+  margin: 0px;
+  padding: 0;
 }
