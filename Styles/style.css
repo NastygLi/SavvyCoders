@@ -18,6 +18,8 @@
     }
     .container {
       max-width: 960px;
+      min-width: 480px;
+      width:500px;
 
     }
     .tomatify {
