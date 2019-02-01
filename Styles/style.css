@@ -1,14 +1,12 @@
 
     h1 {
-      margin: center:50px;
+
       background-color: aqua;
       color: tomato;
     }
 
     h2 {
       border: 1px
-      background-color: yellowgreen;
-      color: thistle
     }
     h3 {
       background-color: rebeccapurple;
@@ -18,8 +16,9 @@
       background-color: antiquewhite;
       color:rgb(192, 192, 209)
     }
-    #content {
-      text-align: center;
+    .container {
+      max-width: 960px;
+
     }
     .tomatify {
       color:tomato;
@@ -31,10 +30,3 @@
       background-color: blue;
       color:cadetblue;
     }
-* {
-  border: solid 1px color:red;
-  margin: 0px;
-  padding: 0;
-  left:50px;
-  right:50;
-}
