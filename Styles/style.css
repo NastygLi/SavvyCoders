@@ -1,3 +1,11 @@
+* {
+  /*2 numbers is top and bottom.
+    3 numbers is top, both sides, and bottom:
+    4 numbers is all sides with various sizes*/
+  border:solid 1px lightgrey;
+  margin: 20px 20px;
+  padding: 20px 20px 20px;
+}
 
     h1 {
 
@@ -21,14 +29,6 @@
       max-width: 960px;
       min-width: 480px;
       width:500px;
-      * {
-        /*2 numbers is top and bottom.
-          3 numbers is top, both sides, and bottom:
-          4 numbers is all sides with various sizes*/
-        border:solid 1px lightgrey;
-        margin: 20px 20px;
-        padding: 20px 20px 20px;
-    }
 
     }
     .tomatify {
