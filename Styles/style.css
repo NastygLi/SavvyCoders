@@ -1,4 +1,4 @@
-<style>
+
     h1 {
       background-color: aqua;
       color: tomato;
@@ -8,20 +8,17 @@
       background-color: yellowgreen;
       color: thistle
     }
-
     h3 {
       background-color: rebeccapurple;
       color: seashell
     }
-    li {
+          li {
       background-color: antiquewhite;
       color:rgb(192, 192, 209)
     }
     #content {
       text-align: center;
-
     }
-        }
     .tomatify {
       color:tomato;
     }
@@ -34,5 +31,3 @@
       background-color: blue;
       color:cadetblue;
     }
-    }
-  </style>
