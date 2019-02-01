@@ -1,0 +1,38 @@
+<style>
+    h1 {
+      background-color: aqua;
+      color: tomato;
+    }
+
+    h2 {
+      background-color: yellowgreen;
+      color: thistle
+    }
+
+    h3 {
+      background-color: rebeccapurple;
+      color: seashell
+    }
+    li {
+      background-color: antiquewhite;
+      color:rgb(192, 192, 209)
+    }
+    #content {
+      text-align: center;
+
+    }
+        }
+    .tomatify {
+      color:tomato;
+    }
+    .aquafy {
+      color: greenyellow;
+
+
+    }
+    ul {
+      background-color: blue;
+      color:cadetblue;
+    }
+    }
+  </style>
