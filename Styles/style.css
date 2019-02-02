@@ -16,8 +16,8 @@ li{
 }
 
 h1 {
-  background-color: blueviolet;
-  color: yellowgreen
+  background-color: rgb(201, 242, 255);
+  color: rgb(10, 15, 1)
 }
 
 h2 {
@@ -69,15 +69,14 @@ h5 {
 li:first-child {
   margin-right: 50px;
 
-
 }
 .container {
   width: auto;
 }
 
 h1 {
-  background-color: blueviolet;
-  color: yellowgreen
+  background-color: gray;
+  color: rgb(0, 0, 0)
 }
 
 h2 {
@@ -108,12 +107,20 @@ h5 {
   color:darksalmon;
   background-color:darkseagreen;
 }
+#nav {
+  text-align: center;
+  background-color: grey;
+
+}
 
 .picturesize {
   widows: 100px;
 
 }
+html {
+  background-color: grey;
 
+}
 
 .textposition {
   text-align: center;
@@ -124,6 +131,10 @@ h5 {
 }
 
 .facepicsize {
-  width: 350px;
-  height: 350px;
+  width: auto;
+  height: auto;
+  align-content: center;
+}
+.facepic {
+  background-color: rgb(236, 14, 14);
 }
