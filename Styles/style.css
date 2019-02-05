@@ -61,6 +61,7 @@ h4 {
 h5 {
   background-color: green;
   color: blue;
+  text-transform: capitalize;
 }
 
 .lightgrey {
