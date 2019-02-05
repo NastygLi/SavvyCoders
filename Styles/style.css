@@ -88,6 +88,9 @@ h5 {
 li:first-child {
   margin-right: 50px;
 }
+li:hover {
+  background-color: red;
+}
 ul li:last-child {
   background-color: cornflowerblue;
 }
