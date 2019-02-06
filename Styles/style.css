@@ -2,7 +2,7 @@
   /*2 numbers is top and bottom.
     3 numbers is top, both sides, and bottom:
     4 numbers is all sides with various sizes*/
-  border:solid 1px rgb(12, 12, 12);
+  border:hidden 1px rgb(12, 12, 12);
   margin: auto;
   padding: 20px 20px 20px;
   width: auto;
@@ -34,10 +34,21 @@ li{
   background-color: gray;
 
 }
+#nav > ul > li > ul {
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#nav > ul > li:hover > ul {
+  display: block;
+}
 
 h1 {
   background-color: gray;
   color: rgb(10, 15, 1);
+  text-align: center;
 }
 
 h2 {
@@ -57,17 +68,27 @@ h4 {
   background-color: orange;
   color: rgb(14, 1, 3);
 }
-
 h5 {
   background-color: green;
   color: blue;
   text-transform: capitalize;
 }
-
 .lightgrey {
   color: gray;
 }
+#nav ul,
+#footer ul{
+  list-style: none;
+}
+#nav > ul > li {
+  position: relative;
+  display: inline;
+}
 
+#footer li {
+  display: inline;
+  padding: 5px;
+}
 .bluelist {
   color:darksalmon;
   background-color:darkseagreen;
@@ -92,7 +113,12 @@ div {
   height: 350px;
 }
 li:first-child {
-  margin-right: 50px;
+  margin-right: 0px;
+}
+#header {
+  top: 20%
+ background-color: salmon;
+ padding-top: 190px;
 }
 .links:hover {
   background-color: black;
@@ -100,8 +126,16 @@ li:first-child {
 ul li:last-child {
   background-color: cornflowerblue;
 }
+ul li:first-child {
+  background-color: yellow;
+}
+#footer {
+
+}
 .container {
   width: auto;
+  margin: 960px;
+  background-color: yellow;
 }
 .links {
   background-color: red;
@@ -110,6 +144,13 @@ ul li:last-child {
 #nav {
   text-align: center;
   background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 140pc;
+}
+li {
+  display: list-item;
 }
 .picturesize {
   widows: 100px;
@@ -129,6 +170,6 @@ html {
   align-content: center;
 }
 .facepic:hover {
-  background-color: rgb(0, 0, 0);
+  text-decoration: underline;
 
 }
