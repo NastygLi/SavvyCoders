@@ -37,9 +37,9 @@ li{
 #nav > ul > li > ul {
   position: absolute;
   background-color: red;
-  top: 0;
   left: 0;
   display: none;
+  top: 100%;
 }
 #nav > ul > li:hover > ul {
   display: block;
@@ -116,7 +116,7 @@ li:first-child {
   margin-right: 0px;
 }
 #header {
-  top: 20%
+  top: 20%;
  background-color: salmon;
  padding-top: 190px;
 }
@@ -147,7 +147,7 @@ ul li:first-child {
   position: fixed;
   top: 0;
   left: 0;
-  width: 140pc;
+  width: 100%;
 }
 li {
   display: list-item;
