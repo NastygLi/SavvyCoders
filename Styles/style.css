@@ -1,12 +1,20 @@
 * {
   /*2 numbers is top and bottom.
-    3 numbers is top, both sides, and bottom:
-    4 numbers is all sides with various sizes*/
+  3 numbers is top, both sides, and bottom:
+  4 numbers is all sides with various sizes*/
   border:hidden 1px rgb(12, 12, 12);
   margin: auto;
   padding: 20px 20px 20px;
   width: auto;
   color: black;
+}
+#nav {
+  text-align: center;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -25,18 +33,17 @@ figure ~ p {
   color: yellow;
 }
 li{
-  border: solid 1px; color:red;
+  border: solid 1px; color:gray;
   color: blue
 }
 .container {
-  width: 960;
-  margin: auto;
-  background-color: gray;
-
+  width: auto;
+  margin: 960px;
+  background-color: yellow;
 }
 #nav > ul > li > ul {
   position: absolute;
-  background-color: red;
+  background-color: gray;
   left: 0;
   display: none;
   top: 100%;
@@ -52,7 +59,7 @@ h1 {
 }
 
 h2 {
-  background-color: red;
+  background-color: grey;
   color: green;
 }
 
@@ -105,7 +112,7 @@ h5 {
   background-color: gray;
 }
 div {
-  background-color: chartreuse;
+  background-color: gray;
 
 }
 .facepicsize {
@@ -116,38 +123,24 @@ li:first-child {
   margin-right: 0px;
 }
 #header {
-  top: 20%;
- background-color: salmon;
- padding-top: 190px;
+  top: 0%;
+ background-color: gray;
+ padding-top: 0px;
 }
 .links:hover {
   background-color: black;
 }
 ul li:last-child {
-  background-color: cornflowerblue;
+  background-color: gray;
 }
 ul li:first-child {
-  background-color: yellow;
+  background-color: gray;
 }
-#footer {
-
-}
-.container {
-  width: auto;
-  margin: 960px;
-  background-color: yellow;
-}
+/*#footer
+ */
 .links {
-  background-color: red;
+  background-color: gray;
   border-radius: 20px;
-}
-#nav {
-  text-align: center;
-  background-color: grey;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 li {
   display: list-item;
