@@ -4,14 +4,14 @@
   4 numbers is all sides with various sizes*/
   border:hidden 1px rgb(12, 12, 12);
   margin: auto;
-  padding: 20px 20px 20px;
+  padding: 0px 20px 20px;
   width: auto;
   color: black;
 }
 #nav {
   text-align: center;
   background-color: grey;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -142,8 +142,16 @@ ul li:first-child {
   background-color: gray;
   border-radius: 20px;
 }
-li {
-  display: list-item;
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: grid;
+  margin: 0;
+  grid-template-rows: min-content min-content auto min-content;
+  border: 1mm;
+  border-color: black;li {
+  display: grid;
+  min-height:100vh;
+
 }
 .picturesize {
   widows: 100px;
