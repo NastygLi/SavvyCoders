@@ -2,54 +2,71 @@
   /*2 numbers is top and bottom.
   3 numbers is top, both sides, and bottom:
   4 numbers is all sides with various sizes*/
-  border:hidden 1px rgb(12, 12, 12);
+  border: hidden 1px rgb(12, 12, 12);
   margin: auto;
   padding: 0px 20px 20px;
   width: auto;
-  color: black;
+  color: rgb(80, 28, 28);
 }
+
 #nav {
+  grid-area: nav;
   text-align: center;
-  background-color: grey;
+  background-color: red;
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
 }
+
 a {
   text-decoration: none;
 }
+
 .flt-lft {
   float: left;
   margin-right: 20px;
 }
-figure + p {
+
+figure+p {
   background-color: greenyellow;
 }
+
 .hr {
   margin: 20px;
 }
-figure ~ p {
+
+figure~p {
   color: yellow;
 }
-li{
-  border: solid 1px; color:gray;
+
+li {
+  border: solid 1px;
+  color: gray;
   color: blue
 }
+
 .container {
-  width: auto;
+  max-width: auto;
   margin: 960px;
   background-color: yellow;
 }
-#nav > ul > li > ul {
+
+#nav>ul>li>ul {
   position: absolute;
   background-color: gray;
   left: 0;
   display: none;
   top: 100%;
 }
-#nav > ul > li:hover > ul {
+
+#nav>ul>li:hover>ul {
   display: block;
+}
+
+#nav>ul {
+  display: flex;
+  flex-direction: row;
 }
 
 h1 {
@@ -59,35 +76,42 @@ h1 {
 }
 
 h2 {
-  background-color: grey;
-  color: green;
+  background-color: rgb(181, 73, 73);
+  color: rgb(68, 219, 68);
 }
 
 h3 {
-  background-color:gray;
-  color:black;
+  background-color: rgb(116, 43, 43);
+  color: black;
   border-radius: 30px;
   text-align: center;
   border: 30px;
   padding: 20px;
 }
+
 h4 {
   background-color: orange;
   color: rgb(14, 1, 3);
 }
+
 h5 {
   background-color: green;
   color: blue;
   text-transform: capitalize;
 }
+
+/*
 .lightgrey {
   color: gray;
 }
-#nav ul,
-#footer ul{
+
+/*#nav li > ul*/
+
+#footer ul {
   list-style: none;
 }
-#nav > ul > li {
+
+#nav>ul>li {
   position: relative;
   display: inline;
 }
@@ -96,81 +120,121 @@ h5 {
   display: inline;
   padding: 5px;
 }
+
 .bluelist {
-  color:darksalmon;
-  background-color:darkseagreen;
+  color: darksalmon;
+  background-color: rgb(31, 171, 31);
 }
+
 .picturesize {
   widows: 100px;
 }
+
 .textposition {
   text-align: center;
 }
+
 #content {
   text-align: center;
   border-radius: 20px;
-  background-color: gray;
+  background-color: rgb(208, 67, 67);
 }
-div {
-  background-color: gray;
 
+div {
+  background-color: rgb(211, 119, 119);
 }
+
 .facepicsize {
   width: 350px;
   height: 350px;
 }
+
 li:first-child {
   margin-right: 0px;
 }
+
 #header {
+  grid-area: Header;
   top: 0%;
- background-color: gray;
- padding-top: 0px;
+  background-color: rgb(235, 122, 122);
+  padding-top: 0px;
 }
+
 .links:hover {
-  background-color: black;
+  background-color: rgb(126, 19, 19);
 }
+
 ul li:last-child {
-  background-color: gray;
+  background-color: blue;
 }
+
 ul li:first-child {
-  background-color: gray;
+  background-color: green;
 }
-/*#footer
- */
+
+#footer {
+  grid-area: Footer;
+}
+
+#content {
+  grid-area: Content;
+}
+
 .links {
-  background-color: gray;
+  background-color: rgb(208, 99, 99);
   border-radius: 20px;
 }
-body{
+
+body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: grid;
   margin: 0;
   grid-template-rows: min-content min-content auto min-content;
   border: 1mm;
-  border-color: black;li {
-  display: grid;
-  min-height:100vh;
-
+  grid-template-areas: "nav"
+                        "Header"
+                        "Content"
+                        "Footer";
+  min-width: height 70vw;
 }
+
 .picturesize {
   widows: 100px;
 }
-html {
-  background-color: grey;
-}
-.textposition {
-  text-align: center;
-}
-#content {
-  text-align: center;
-}
-.facepicsize {
-  width: auto;
-  height: auto;
-  align-content: center;
-}
-.facepic:hover {
-  text-decoration: underline;
 
+@media(min-width:750px) {
+  body {
+    grid-template-areas: "nav  Header"
+                        "nav  Content"
+                        "nav  footer";
+    grid-template-rows: min-content auto min-content;
+    grid-template-columns: minmax(min-content, 15vw) auto;
+  }
+  #nav > ul {
+    flex-direction: column  ;
+  }
+  #nav>ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #nav>ul>li {
+    display: block;
+  }
+  html {
+    background-color: rgb(208, 91, 91);
+  }
+  .textposition {
+    text-align: center;
+  }
+  #content {
+    text-align: center;
+  }
+  .facepicsize {
+    width: auto;
+    height: auto;
+    align-content: center;
+  }
+  .facepic:hover {
+    text-decoration: underline;
+  }
 }
