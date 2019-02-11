@@ -3,8 +3,7 @@
   3 numbers is top, both sides, and bottom:
   4 numbers is all sides with various sizes*/
   border: hidden 1px rgb(12, 12, 12);
-  margin: auto;
-  padding: 0px 20px 20px;
+  padding: 20px 20px 20px;
   width: auto;
   color: rgb(80, 28, 28);
 }
@@ -76,12 +75,12 @@ h1 {
 }
 
 h2 {
-  background-color: rgb(181, 73, 73);
+  background-color: rgb(247, 6, 6);
   color: rgb(68, 219, 68);
 }
 
 h3 {
-  background-color: rgb(116, 43, 43);
+  background-color: rgb(17, 245, 28);
   color: black;
   border-radius: 30px;
   text-align: center;
@@ -100,11 +99,6 @@ h5 {
   text-transform: capitalize;
 }
 
-/*
-.lightgrey {
-  color: gray;
-}
-
 /*#nav li > ul*/
 
 #footer ul {
@@ -120,12 +114,6 @@ h5 {
   display: inline;
   padding: 5px;
 }
-
-.bluelist {
-  color: darksalmon;
-  background-color: rgb(31, 171, 31);
-}
-
 .picturesize {
   widows: 100px;
 }
@@ -189,6 +177,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: grid;
   margin: 0;
+  background-color: orange;
   grid-template-rows: min-content min-content auto min-content;
   border: 1mm;
   grid-template-areas: "nav"
@@ -219,6 +208,7 @@ body {
   }
   #nav>ul>li {
     display: block;
+    justify-content: space-around;
   }
   html {
     background-color: rgb(208, 91, 91);
