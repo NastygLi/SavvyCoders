@@ -1,12 +1,18 @@
+var name;
 
-        var namechecker = function () {
-            var name = prompt("What is your name");
+var nameChecker = function nameChecker() {
+    name = prompt("What is your name");
+};
 
-            if (name === "") {
+nameChecker();
 
-                name = prompt("Forreal Doe");
-            } else {
-                document.querySelector("h1").textContent = `Welcome ${name}`;
-            }
-        }
-namechecker();
+var blankChecker = function blankChecker() {
+    if (name === '') {
+        name = prompt("Forreal Doe");
+    blankChecker();
+    }
+
+    document.querySelector("h1").textContent = `Welcome ${name}`;
+}
+
+blankChecker();
